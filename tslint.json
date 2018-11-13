@@ -93,7 +93,9 @@
     "nx-enforce-module-boundaries": [
       true,
       {
-        "allow": [],
+        "allow": [
+          "@orchestrator/core/testing"
+        ],
         "depConstraints": [
           { "sourceTag": "*", "onlyDependOnLibsWithTags": ["*"] }
         ]

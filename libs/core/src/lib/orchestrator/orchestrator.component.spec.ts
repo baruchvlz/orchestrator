@@ -5,7 +5,8 @@ import { DynamicModule } from 'ng-dynamic-component';
 import { COMPONENT_MAP } from '../component-map';
 import { RenderItemComponent } from '../render-item/render-item.component';
 import { OrchestratorComponent } from './orchestrator.component';
-import { Dynamic1Component, Dynamic2Component } from './../test';
+// import { Dynamic1Component, Dynamic2Component } from '@orchestrator/core/testing';
+import { Dynamic1Component, Dynamic2Component } from './../testing/src/lib/dynamic-components';
 
 describe('OrchestratorComponent', () => {
   let component: OrchestratorComponent;

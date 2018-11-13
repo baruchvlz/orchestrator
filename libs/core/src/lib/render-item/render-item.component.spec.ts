@@ -7,7 +7,8 @@ import { COMPONENT_MAP, ComponentMap } from '../component-map';
 import { OrchestratorConfigItem } from '../types';
 import { InjectorRegistryService } from './injector-registry.service';
 import { RenderItemComponent } from './render-item.component';
-import { Dynamic1Component, Dynamic2Component } from './../test';
+// import { Dynamic1Component, Dynamic2Component } from '@orchestrator/core/testing';
+import { Dynamic1Component, Dynamic2Component } from './../testing/src/lib/dynamic-components';
 
 @Component({
   selector: 'orc-host-comp',

@@ -10,4 +10,4 @@ import { FlexWrapDirective, FlexDirectionDirective } from './flex';
   declarations: [LayoutFlatComponent, FlexWrapDirective, FlexDirectionDirective],
   exports: [LayoutFlatComponent, FlexWrapDirective, FlexDirectionDirective],
 })
-export class LayoutModule {}
+export class OrchestratorLayoutModule {}

@@ -20,8 +20,8 @@
       "@orchestrator/layout": [
         "libs/layout/src/public_api.ts"
       ],
-      "@orchestrator/test-utils": [
-        "test.ts"
+      "@orchestrator/core/testing": [
+        "libs/core/src/lib/testing/src/public_api.ts"
       ]
     }
   },

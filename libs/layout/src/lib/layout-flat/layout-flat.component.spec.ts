@@ -1,12 +1,15 @@
 import { Component, NO_ERRORS_SCHEMA, ComponentRef } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { OrchestratorCoreModule } from '@orchestrator/core';
-
-import { Dynamic1Component, Dynamic2Component } from '@orchestrator/test-utils';
-import { OrchestratorConfigItem } from '@orchestrator/core';
-
-import { LayoutFlatComponent } from './layout-flat.component';
 import { By } from '@angular/platform-browser';
+
+import { OrchestratorCoreModule, OrchestratorConfigItem } from '@orchestrator/core';
+import { LayoutFlatComponent } from './layout-flat.component';
+
+// import { Dynamic1Component, Dynamic2Component } from '@orchestrator/core/testing';
+import {
+  Dynamic1Component,
+  Dynamic2Component,
+} from './../../../../core/src/lib/testing/src/public_api';
 
 let hostComp: HostComponent;
 let hostFixture: ComponentFixture<HostComponent>;

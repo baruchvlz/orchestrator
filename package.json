@@ -34,6 +34,7 @@
     "prebuild-libs": "rimraf dist",
     "build-libs": "npm-run-all -p build:*",
     "build:core": "ng-packagr -p libs/core/package.json",
+    "build:layout": "ng-packagr -p libs/layout/package.json",
     "release-ci": "npm-run-all -s build-libs release",
     "release": "npm-run-all -s release:*",
     "postrelease": "node -e \"require('semantic-release-monorepo-hooks').hookAfterAll()\"",
@@ -135,7 +136,10 @@
     "moduleNameMapper": {
       "@orchestrator/core": "<rootDir>/libs/core/src/public_api.ts",
       "@orchestrator/layout": "<rootDir>/libs/layout/src/public_api.ts",
-      "@orchestrator/test-utils": "<rootDir>/test.ts"
-    }
+      "@orchestrator/core/testing": "<rootDir>/libs/core/src/lib/testing/src/public_api.ts"
+    },
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist"
+    ]
   }
 }
