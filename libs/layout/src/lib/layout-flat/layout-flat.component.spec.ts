@@ -5,10 +5,11 @@ import { By } from '@angular/platform-browser';
 import { OrchestratorCoreModule, OrchestratorConfigItem } from '@orchestrator/core';
 import { LayoutFlatComponent } from './layout-flat.component';
 
-// import { Dynamic1Component, Dynamic2Component } from '@orchestrator/core/testing';
+// import { Dynamic1Component, Dynamic2Component, DynamicBaseComponent } from '@orchestrator/core/testing';
 import {
   Dynamic1Component,
   Dynamic2Component,
+  DynamicBaseComponent,
 } from './../../../../core/src/lib/testing/src/public_api';
 
 let hostComp: HostComponent;
@@ -31,7 +32,7 @@ const setItemsToHost = () => {
   `,
 })
 class HostComponent {
-  items: ReadonlyArray<OrchestratorConfigItem<any>>;
+  items: ReadonlyArray<OrchestratorConfigItem<DynamicBaseComponent>>;
   onAfterItemsRendered() {}
 }
 
