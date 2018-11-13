@@ -1,9 +1,13 @@
 {
   "name": "@orchestrator/layout",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "peerDependencies": {
     "@angular/common": "^6.0.0",
     "@angular/core": "^6.0.0",
-    "@angular/cdk": "^6.0.0"
+    "@angular/cdk": "^6.0.0",
+    "@orchestrator/core": "^0.0.0"
+  },
+  "dependencies": {
+    "@orchestrator/core/testing": "^0.0.0"
   }
 }

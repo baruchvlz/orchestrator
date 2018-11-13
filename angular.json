@@ -27,30 +27,6 @@
         }
       }
     },
-    "testing": {
-      "root": "libs/core/testing",
-      "sourceRoot": "libs/core/src/lib/testing/src",
-      "projectType": "library",
-      "prefix": "orc",
-      "architect": {
-        "test": {
-          "builder": "@angular-builders/jest:run",
-          "options": {}
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/core/tsconfig.lib.json",
-              "libs/core/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
     "layout": {
       "root": "libs/layout",
       "sourceRoot": "libs/layout/src",
